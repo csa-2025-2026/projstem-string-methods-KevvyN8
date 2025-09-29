@@ -10,6 +10,20 @@ public class Main
   */
   public static void lastFirstN(String s1, String s2, int n)
   {
+    String output;
+    String firstN;
+    String lastN;
+
+
+// substring(0,n) - 1st n letters
+    firstN = s2.substring(0, n);
+
+  // last n charvters of s1
+  //start at index length() - n gives the last n charcters
+    lastN = s1.substring( s1.length() - n);
+    
+    output = LastN + firstN;
+    System.out.println(output);
   
   }
 
